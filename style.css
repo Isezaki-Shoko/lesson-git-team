@@ -251,6 +251,34 @@ ul { list-style: none; }
   margin-bottom: 6px;
 }
 
+/* ==============ページトップに戻るボタン ======== */
+.page-top {
+	position: fixed;
+	right:  20px;
+	bottom: 20px;
+	width: 50px;
+	height: 50px;
+	background-color: #333;
+	color: #fff;
+	border-radius: 50%;
+	border: none;
+	cursor: pointer;
+	opacity: 0; /*最初は隠す*/
+	visibility: hidden; /*クリックできない*/
+	transition: opacity 0.3s, visibility 0.3s;
+}
+
+/* クラスがついたら表示する */
+.page-top.is-show {
+	opacity: 1;
+	visibility: visible;
+}
+
+/* スムーズに動かすための設定 */
+html {
+	scroll-behavior: smooth;
+}
+
 /* =============== レスポンシブ =============== */
 @media (max-width: 640px) {
   .hero-title { font-size: 2rem; }
