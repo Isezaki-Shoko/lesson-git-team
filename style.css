@@ -198,6 +198,38 @@ ul { list-style: none; }
 }
 .program-desc { font-size: 0.9rem; color: var(--text-sub); }
 
+/* =出店店舗=*/
+.shop {
+  padding: 64px 24px;
+  background: var(--bg-gray);
+}
+.shop-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.shop-item {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 24px;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--border);
+  align-items: start;
+}
+.shop-item:last-child { border-bottom: none; }
+.shop-time {
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: var(--theme-color);
+  padding-top: 2px;
+}
+.shop-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.shop-desc { font-size: 0.9rem; color: var(--text-sub); }
+
 /* =============== アクセス =============== */
 .access {
   padding: 64px 24px;
