@@ -169,6 +169,7 @@ ul { list-style: none; }
 /* =============== プログラム =============== */
 .program {
   padding: 64px 24px;
+  background: var(--bg-gray);
 }
 .program-list {
   display: flex;
