@@ -81,7 +81,7 @@ ul { list-style: none; }
 .site-nav a {
   font-size: 0.9rem;
   font-weight: 600;
-  color: var(--bg-white);
+  color: var(--text-sub);
   transition: color 0.2s;
 }
 .site-nav a:hover { color: var(--theme-color); }
