@@ -22,3 +22,18 @@ document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
 //   - プログラムの時間をクリックで詳細を開閉する
 //   - ページトップに戻るボタン
 // ===================================================
+const pageTopBtn = document.getElementById('page-top');
+
+window.addEventListener('scroll', () => {
+	if (window.scrollY > 300) { //300pxスクロールしたら表示
+		pageTopBtn.classList.add('is-show');
+	} else {
+		pageTopBtn.classList.remove('is-show');
+	}
+});
+
+pageTopBtn.addEventListener('click', () => {
+	window.scrollTo({
+		top:0,behavior: 'smooth'
+	});
+});
